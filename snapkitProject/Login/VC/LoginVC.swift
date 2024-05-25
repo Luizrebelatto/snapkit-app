@@ -27,9 +27,12 @@ class LoginVC: UIViewController {
 
 extension LoginVC: LoginScreenProtocol {
     func tappedLoginButton() {
+        print("chegou na VC")
         let vc: HomeVC = HomeVC()
-        let nav = UINavigationController(rootViewController: vc)
-        navigationController?.pushViewController(vc, animated: true)
+        // Caso queira que a VC seja uma UINavigationController
+//        let nav = UINavigationController(rootViewController: vc)
+        present(vc, animated: true)
+//        navigationController?.pushViewController(vc, animated: true)
     }
  
 }
@@ -41,6 +44,7 @@ extension LoginVC: UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        print(#function)
         let email: String = loginScreen?.emailTextField.text ?? ""
         let passwordTextField: String = loginScreen?.passwordTextField.text ?? ""
         
@@ -49,6 +53,7 @@ extension LoginVC: UITextFieldDelegate {
             loginScreen?.loginButton.isEnabled = true
             loginScreen?.loginButton.backgroundColor = .darkGray
         } else {
+            print("Botao desabilitado")
             loginScreen?.loginButton.isEnabled = false
             loginScreen?.loginButton.backgroundColor = .darkGray.withAlphaComponent(0.6)
         }
@@ -56,9 +61,9 @@ extension LoginVC: UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print(#function)
         textField.resignFirstResponder()
         return false
     }
     
 }
-

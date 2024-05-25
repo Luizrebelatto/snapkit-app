@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		2970872C2BFFC4CB00479A67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970872B2BFFC4CB00479A67 /* AppDelegate.swift */; };
 		2970872E2BFFC4CB00479A67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970872D2BFFC4CB00479A67 /* SceneDelegate.swift */; };
-		297087302BFFC4CB00479A67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2970872F2BFFC4CB00479A67 /* ViewController.swift */; };
 		297087352BFFC4CC00479A67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 297087342BFFC4CC00479A67 /* Assets.xcassets */; };
 		297087382BFFC4CC00479A67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297087362BFFC4CC00479A67 /* LaunchScreen.storyboard */; };
 		29C0BA592C016AC4008017DF /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0BA582C016AC4008017DF /* LoginScreen.swift */; };
 		29C0BA5B2C016B04008017DF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0BA5A2C016B04008017DF /* LoginVC.swift */; };
+		29C0BA5F2C016D89008017DF /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C0BA5E2C016D89008017DF /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		297087282BFFC4CB00479A67 /* snapkitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snapkitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2970872B2BFFC4CB00479A67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2970872D2BFFC4CB00479A67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2970872F2BFFC4CB00479A67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		297087342BFFC4CC00479A67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		297087372BFFC4CC00479A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		297087392BFFC4CC00479A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29C0BA582C016AC4008017DF /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		29C0BA5A2C016B04008017DF /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		29C0BA5E2C016D89008017DF /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +58,10 @@
 		2970872A2BFFC4CB00479A67 /* snapkitProject */ = {
 			isa = PBXGroup;
 			children = (
+				29C0BA5C2C016D6D008017DF /* Home */,
 				29C0BA552C016A63008017DF /* Login */,
 				2970872B2BFFC4CB00479A67 /* AppDelegate.swift */,
 				2970872D2BFFC4CB00479A67 /* SceneDelegate.swift */,
-				2970872F2BFFC4CB00479A67 /* ViewController.swift */,
 				297087342BFFC4CC00479A67 /* Assets.xcassets */,
 				297087362BFFC4CC00479A67 /* LaunchScreen.storyboard */,
 				297087392BFFC4CC00479A67 /* Info.plist */,
@@ -90,6 +90,22 @@
 			isa = PBXGroup;
 			children = (
 				29C0BA5A2C016B04008017DF /* LoginVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		29C0BA5C2C016D6D008017DF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				29C0BA5D2C016D72008017DF /* VC */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		29C0BA5D2C016D72008017DF /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				29C0BA5E2C016D89008017DF /* HomeVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -164,9 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				297087302BFFC4CB00479A67 /* ViewController.swift in Sources */,
 				2970872C2BFFC4CB00479A67 /* AppDelegate.swift in Sources */,
 				29C0BA5B2C016B04008017DF /* LoginVC.swift in Sources */,
+				29C0BA5F2C016D89008017DF /* HomeVC.swift in Sources */,
 				2970872E2BFFC4CB00479A67 /* SceneDelegate.swift in Sources */,
 				29C0BA592C016AC4008017DF /* LoginScreen.swift in Sources */,
 			);
